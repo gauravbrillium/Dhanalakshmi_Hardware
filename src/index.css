@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding-bottom: 550px;
+}
+
+@keyframes moveImages {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 0;
+    transform: translate(100%, 0);
+  }
+  50% {
+    top: 0;
+    left: 0;
+    transform: translate(100%, 100%);
+  }
+  75% {
+    top: 0;
+    left: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.animate-moveImages {
+  animation: moveImages 6s infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
